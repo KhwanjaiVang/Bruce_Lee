@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bruce Lee - Legacy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+   
+:root {
+    /* Custom properties (variables) */
+    --main-color: #333;
+    --secondary-color: #d3d3d3; /* Light grey color */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--secondary-color);
+    /* Add a cool gradient background */
+    background: linear-gradient(to right, var(--main-color), var(--secondary-color));
+    /* Add a smooth scrolling effect for anchor links */
+    scroll-behavior: smooth;
+    /* Change the font style of your body text */
+    font-family: 'Georgia', serif;
+    /* Add a text shadow to your body text for a 3D effect */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .1);
+}
+
+header {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    /* Add a transition effect for color changes */
+    transition: color .5s ease;
+}
+
+nav a:hover {
+    color: #feb47b; /* Change color on hover */
+    /* Change the cursor to a pointer when hovering over links */
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+nav a:hover {
+    animation: bounce 0.5s;
+}
+
+main {
+    padding: 20px;
+    animation: fadeIn 1s ease;
+    /* Add a box shadow to your main content on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+section {
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* Add a hover effect to sections */
+    transform: scale(1.02);
+    transition: transform .2s;
+}
+
+footer {
+    background-color: var(--main-color);
+    color: #fff;
+    text-align: center;
+    padding: 2px 0; /* Reduced padding from 5px to 2px */
+    font-size: 0.8em; /* Reduced font size */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+@media (min-width: 48rem) {
+    /* Styles for medium viewports go here */
+}
+
+@media (min-width: 64rem) {
+    /* Styles for large viewports go here */
+}
+
+h1 {
+    font-size: 2em; /* Adjust this value to make the h1 headers smaller */
+    /* Add some animation to your headers */
+    animation: header-animation 2s ease;
+    /* Change the text color to white */
+    color: #fff;
+    /* Change the font style of your headers */
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    /* Add a hover effect to your headers */
+      transform: scale(1.00);
+    transition: transform .2s;
+}
+
+h2 {
+    font-size: 1.5em; /* Adjust this value to make the h2 headers smaller */
+    /* Add some animation to your headers */
+    animation: header-animation 2s ease;
+    /* Change the text color to white */
+    color: #fff;
+    /* Change the font style of your headers */
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    /* Add a hover effect to your headers */
+       transform: scale(1.00);
+    transition: transform .2s;
+}
+
+@keyframes header-animation {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+figure img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    height: auto;
+    /* Add a hover effect for all images */
+    transform: scale(1.1);
+    transition: transform .2s;
+    /* Add a cool gradient text effect to your headers */
+    background: -webkit-linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* Change the font style of your headers */
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    /* Add a subtle hover effect to your headers */
+    transform: scale(1.05);
+    transition: transform .2s;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Add a cool gradient text effect to your headers */
+    background: -webkit-linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* Change the font style of your headers */
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    /* Add a subtle hover effect to your headers */
+    transform: scale(1.05);
+    transition: transform .2s;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="biography.html">Biography</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="philosophy.html">Philosophy</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="legacy.html">Legacy</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Bruce Lee - Legacy</h1>
+        <p>Bruce Lee's legacy continues to inspire millions of people around the world. His philosophy, martial arts skills, and movies have left a lasting impact on the world.</p>
+        <figure>
+            <img src="bruce_lee_legacy.jpg" alt="Bruce Lee Legacy">
+            <figcaption>Bruce Lee's Legacy</figcaption>
+        </figure>
+        <section>
+            <h2>Influence in Martial Arts</h2>
+            <p>Bruce Lee's influence in martial arts can't be overstated. He revolutionized martial arts movies, and his philosophy of Jeet Kune Do continues to be taught worldwide. His innovative approach to training and fighting has influenced countless martial artists. He emphasized practicality, flexibility, speed, and efficiency in combat and trained in multiple styles to incorporate useful techniques.</p>
+        </section>
+        <section>
+            <h2>Influence in Film</h2>
+            <p>Bruce Lee broke stereotypes and created a new mold for Asian actors in Hollywood. His films continue to be popular and his acting style has influenced many action film stars. He is often credited with paving the way for future Asian actors in Hollywood. His films, such as "Enter the Dragon" and "Fists of Fury", introduced martial arts films to a global audience.</p>
+        </section>
+        <section>
+            <h2>Continued Inspiration</h2>
+            <p>Bruce Lee's dedication to his craft, his philosophical insights, and his charismatic personality continue to inspire people all over the world. His quotes continue to motivate athletes, artists, and thought leaders. His life story of overcoming obstacles to achieve his dreams resonates with many people.</p>
+        </section>
+        <section>
+            <h2>Legacy in Pop Culture</h2>
+            <p>Bruce Lee's influence extends beyond martial arts and movies into broader pop culture. His iconic yellow jumpsuit, his "one inch punch", and his famous battle cry have been referenced in numerous films, TV shows, music, and video games. He remains a beloved icon and his image and likeness are recognized around the world.</p>
+        </section>
+        <section>
+            <h2>Impact on Fitness</h2>
+            <p>Bruce Lee was known for his extraordinary physical fitness and agility. His training methods and philosophy have influenced the fitness industry. He advocated for functional strength and flexibility over muscle mass, and he incorporated a variety of fitness techniques including weight training, cardio exercises, stretching, and diet.</p>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+        <h3>Bruce Lee Fan Site</h3>
+        
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 Bruce Lee Fan Site. All rights reserved.</p>
+    </div>
+    </footer>
+</body>
+</html>

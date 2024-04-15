@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bruce Lee - Biography</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+:root {
+    /* Custom properties (variables) */
+    --main-color: #333;
+    --secondary-color: #d3d3d3; /* Light grey color */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--secondary-color);
+    /* Add a cool gradient background */
+    background: linear-gradient(to right, var(--main-color), var(--secondary-color));
+    /* Add a smooth scrolling effect for anchor links */
+    scroll-behavior: smooth;
+    /* Change the font style of your body text */
+    font-family: 'Georgia', serif;
+    /* Add a text shadow to your body text for a 3D effect */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .1);
+}
+
+header {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    /* Add a transition effect for color changes */
+    transition: color .5s ease;
+}
+
+nav a:hover {
+    color: #feb47b; /* Change color on hover */
+    /* Change the cursor to a pointer when hovering over links */
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+nav a:hover {
+    animation: bounce 0.5s;
+}
+
+main {
+    padding: 20px;
+    animation: fadeIn 1s ease;
+    /* Add a box shadow to your main content on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+section {
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* Add a hover effect to sections */
+    transform: scale(1.02);
+    transition: transform .2s;
+}
+
+footer {
+    background-color: var(--main-color);
+    color: #fff;
+    text-align: center;
+    padding: 2px 0; /* Reduced padding from 5px to 2px */
+    font-size: 0.8em; /* Reduced font size */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+@media (min-width: 48rem) {
+    /* Styles for medium viewports go here */
+}
+
+@media (min-width: 64rem) {
+    /* Styles for large viewports go here */
+}
+
+h1 {
+    font-size: 2em; /* Adjust this value to make the h1 headers smaller */
+    /* Add some animation to your headers */
+    animation: header-animation 2s ease;
+    /* Change the text color to white */
+    color: #fff;
+    /* Change the font style of your headers */
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    /* Add a hover effect to your headers */
+      transform: scale(1.00);
+    transition: transform .2s;
+}
+
+h2 {
+    font-size: 1.5em; /* Adjust this value to make the h2 headers smaller */
+    /* Add some animation to your headers */
+    animation: header-animation 2s ease;
+    /* Change the text color to white */
+    color: #fff;
+    /* Change the font style of your headers */
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    /* Add a hover effect to your headers */
+       transform: scale(1.00);
+    transition: transform .2s;
+}
+
+@keyframes header-animation {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+figure img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    height: auto;
+    /* Add a hover effect for all images */
+    transform: scale(1.1);
+    transition: transform .2s;
+    /* Add a cool gradient text effect to your headers */
+    background: -webkit-linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* Change the font style of your headers */
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    /* Add a subtle hover effect to your headers */
+    transform: scale(1.05);
+    transition: transform .2s;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Add a cool gradient text effect to your headers */
+    background: -webkit-linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* Change the font style of your headers */
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    /* Add a subtle hover effect to your headers */
+    transform: scale(1.05);
+    transition: transform .2s;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="biography.html">Biography</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="philosophy.html">Philosophy</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="legacy.html">Legacy</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Bruce Lee - Biography</h1>
+        <p>Bruce Lee was born on November 27, 1940, in the Chinatown area of San Francisco, California. He was a Hong Kong-American actor, director, martial artist, and philosopher. He is widely considered one of the most influential martial artists of all time and a pop culture icon of the 20th century.</p>
+        <figure>
+            <img src="bruce_lee_young.jpg" alt="Young Bruce Lee">
+            <figcaption>A young Bruce Lee</figcaption>
+        </figure>
+        <section>
+    <h2>Early Life</h2>
+    <p>Bruce Lee was born Lee Jun-fan in San Francisco, California. His father, Lee Hoi-chuen, was a famous Cantonese opera star. Lee was introduced to the film industry by his father and appeared in several films as a child actor. His early martial arts experience included Wing Chun (trained under Ip Man), tai chi, boxing (winning a Hong Kong boxing tournament), and frequent street fighting (neighborhood and rooftop fights).</p>
+</section>
+<section>
+    <h2>Martial Arts Career</h2>
+    <p>Bruce Lee began training in martial arts at the age of 13. He developed his own martial arts philosophy and training program, which he called Jeet Kune Do (The Way of the Intercepting Fist). From 1959 until 1964, he gave up his acting career to pursue a vocation in martial arts. He started off as a teacher of Kung Fu. With time, he opened his own martial arts school, Lee Jun Fan Gung Fu Institute, in Seattle.</p>
+</section>
+<section>
+    <h2>Film Career</h2>
+    <p>Bruce Lee's film career began in earnest in the 1970s, when he starred in a series of action films that showcased his unique style of martial arts. His films, including "Enter the Dragon" and "Fists of Fury," were huge hits and helped to popularize martial arts in the West. After The Green Hornet series was canceled, Bruce encountered resistance while working in Hollywood and so headed to Hong Kong to pursue a film career. In Hong Kong he made 3 films, which consecutively broke all box office records and showcased martial arts in an entirely new way.</p>
+</section>
+    </main>
+  <footer>
+    <div class="footer-content">
+        <h3>Bruce Lee Fan Site</h3>
+        
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 Bruce Lee Fan Site. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bruce Lee - Movies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+:root {
+    /* Custom properties (variables) */
+    --main-color: #333;
+    --secondary-color: #d3d3d3; /* Light grey color */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--secondary-color);
+    /* Add a cool gradient background */
+    background: linear-gradient(to right, var(--main-color), var(--secondary-color));
+    /* Add a smooth scrolling effect for anchor links */
+    scroll-behavior: smooth;
+    /* Change the font style of your body text */
+    font-family: 'Georgia', serif;
+    /* Add a text shadow to your body text for a 3D effect */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .1);
+}
+
+header {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    /* Add a transition effect for color changes */
+    transition: color .5s ease;
+}
+
+nav a:hover {
+    color: #feb47b; /* Change color on hover */
+    /* Change the cursor to a pointer when hovering over links */
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+nav a:hover {
+    animation: bounce 0.5s;
+}
+
+main {
+    padding: 20px;
+    animation: fadeIn 1s ease;
+    /* Add a box shadow to your main content on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+section {
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* Add a hover effect to sections */
+    transform: scale(1.02);
+    transition: transform .2s;
+}
+
+footer {
+    background-color: var(--main-color);
+    color: #fff;
+    text-align: center;
+    padding: 1px 0; /* Reduced padding from 5px to 2px */
+    font-size: 0.8em; /* Reduced font size */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+@media (min-width: 48rem) {
+    /* Styles for medium viewports go here */
+}
+
+@media (min-width: 64rem) {
+    /* Styles for large viewports go here */
+}
+
+h1 {
+    font-size: 2em; /* Adjust this value to make the h1 headers smaller */
+    /* Add some animation to your headers */
+    animation: header-animation 2s ease;
+    /* Change the text color to white */
+    color: #fff;
+    /* Change the font style of your headers */
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    /* Add a hover effect to your headers */
+      transform: scale(1.00);
+    transition: transform .2s;
+}
+
+h2 {
+    font-size: 1.5em; /* Adjust this value to make the h2 headers smaller */
+    /* Add some animation to your headers */
+    animation: header-animation 2s ease;
+    /* Change the text color to white */
+    color: #fff;
+    /* Change the font style of your headers */
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    /* Add a hover effect to your headers */
+       transform: scale(1.00);
+    transition: transform .2s;
+}
+
+@keyframes header-animation {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+figure img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    height: auto;
+    /* Add a hover effect for all images */
+    transform: scale(1.1);
+    transition: transform .2s;
+    /* Add a cool gradient text effect to your headers */
+    background: -webkit-linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* Change the font style of your headers */
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    /* Add a subtle hover effect to your headers */
+    transform: scale(1.05);
+    transition: transform .2s;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Add a cool gradient text effect to your headers */
+    background: -webkit-linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* Change the font style of your headers */
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    /* Add a subtle hover effect to your headers */
+    transform: scale(1.05);
+    transition: transform .2s;
+}
+.container {
+  display: flex;
+  margin-bottom: 20px;
+  background-color: var(--secondary-color);
+}
+
+.column {
+  flex: 40%;
+  padding: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+}
+
+.column h2 {
+  color: var(--main-color);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 0.9em;
+  font-family: 'Roboto', sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+table thead tr {
+  background-color: var(--main-color);
+  color: #ffffff;
+  text-align: left;
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+}
+
+table tbody tr {
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+table tbody tr:nth-of-type(even) {
+  background-color: var(--secondary-color);
+}
+
+table tbody tr:last-of-type {
+  border-bottom: 2px solid var(--main-color);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="biography.html">Biography</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="philosophy.html">Philosophy</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="legacy.html">Legacy</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+         <h1>Bruce Lee - Movies</h1>
+        <p>Bruce Lee's film career began in earnest in the 1970s, when he starred in a series of action films that showcased his unique style of martial arts. His films were huge hits and helped to popularize martial arts in the West.</p>
+        <figure>
+            <img src="enter_the_dragon.jpg" alt="Enter the Dragon">
+            <figcaption>Enter the Dragon</figcaption>
+        </figure>
+        <div class="container">
+            <section class="column">
+                <h2>Enter the Dragon</h2>
+                <p>"Enter the Dragon" is a 1973 martial arts film directed by Robert Clouse. The film stars Bruce Lee, John Saxon and Jim Kelly. It would be Bruce Lee's final completed film appearance before his death on 20 July 1973 at age 32. Often considered the ultimate kung-fu movie and a fitting swan song for Bruce Lee. The film's appeal rests almost entirely on Lee's fight scenes. Critics have praised the film for its intense fight sequences and its ability to entertain without relying just on martial arts. It has been described as a pop culture gem of a film, watching "Enter the Dragon" is like watching a comic book come to life but without any of the superpowers.</p>
+            </section>
+            <section class="column">
+                <h2>Fists of Fury</h2>
+                <p>"Fists of Fury" is a 1971 Hong Kong martial arts film directed by Lo Wei, starring Bruce Lee in his first major film. It was his first leading role in a major film, after a series of minor roles in U.S. television shows. Despite being seen as a routine exploitation movie with a rudimentary revenge plot, hilariously bad dialogue, amateurish acting, and primitive cinematic technique, it is quite enjoyable as a display of Bruce Lee's martial arts skills.</p>
+            </section>
+        </div>
+        <div class="container">
+            <section class="column">
+                <h2>The Way of the Dragon</h2>
+                <p>"The Way of the Dragon" is a 1972 Hong Kong martial arts action comedy film written, produced and directed by Bruce Lee, who also stars in the lead role. This is Bruce Lee's only complete directorial film.</p>
+            </section>
+            <section class="column">
+                <h2>Game of Death</h2>
+                <p>"Game of Death" is a 1978 martial arts film directed by Robert Clouse. The film stars Bruce Lee, John Saxon and Jim Kelly. It would be Bruce Lee's final completed film appearance before his death on 20 July 1973 at age 32. Often considered the ultimate kung-fu movie and a fitting swan song for Bruce Lee. The film's appeal rests almost entirely on Lee's fight scenes. Critics have praised the film for its intense fight sequences and its ability to entertain without relying just on martial arts. It has been described as a pop culture gem of a film, watching "Enter the Dragon" is like watching a comic book come to life but without any of the superpowers.</p>
+            </section>
+        </div>
+        <section>
+            <h2>Bruce Lee Filmography</h2>
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td>Enter the Dragon</td>
+                    <td>1973</td>
+                </tr>
+                <tr>
+                    <td>Fists of Fury</td>
+                    <td>1971</td>
+                </tr>
+                <tr>
+                    <td>The Way of the Dragon</td>
+                    <td>1972</td>
+                </tr>
+                <tr>
+                    <td>Game of Death</td>
+                    <td>1978</td>
+                </tr>
+                <tr>
+                    <td>The Big Boss</td>
+                    <td>1971</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+   <footer>
+    <div class="footer-content">
+        <h3>Bruce Lee Fan Site</h3>
+       
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 Bruce Lee Fan Site. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
